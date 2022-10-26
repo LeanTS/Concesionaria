@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CargarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CargarCliente.Designer.cs">
+      <DependentUpon>CargarCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="inicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +60,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CargarCliente.resx">
+      <DependentUpon>CargarCliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="inicio.resx">
       <DependentUpon>inicio.cs</DependentUpon>
     </EmbeddedResource>
@@ -78,6 +87,22 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\cpglogo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\LogoCPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="img\CPG_Icono.ico" />
+    <Content Include="img\CPG_Ico.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BE_Concescionaria\BE_Concescionaria.csproj">
+      <Project>{0c10bd4a-a7fe-454b-8f72-dde2610f8594}</Project>
+      <Name>BE_Concescionaria</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

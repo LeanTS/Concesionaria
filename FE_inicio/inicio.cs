@@ -21,5 +21,13 @@ namespace FE_inicio
         {
 
         }
+
+        private void cARGARCLIENTEToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CargarCliente newcargarcliente = new CargarCliente();
+            newcargarcliente.MdiParent = this;
+            newcargarcliente.Show();
+        }
+
     }
 }

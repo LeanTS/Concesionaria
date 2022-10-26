@@ -1,0 +1,11 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <Clientes>
+    <Nombre>choncha</Nombre>
+    <Apellido>tumare</Apellido>
+    <Telefono>3515182362</Telefono>
+    <Fecha>25/10/2022</Fecha>
+    <Moto>pisteritaaaa</Moto>
+    <Estado>Seguimiento</Estado>
+  </Clientes>
+</DocumentElement>
