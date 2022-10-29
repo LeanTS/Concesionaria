@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BE_Concescionaria;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,9 +26,31 @@ namespace FE_inicio
         private void cARGARCLIENTEToolStripMenuItem_Click(object sender, EventArgs e)
         {
             CargarCliente newcargarcliente = new CargarCliente();
+            
             newcargarcliente.MdiParent = this;
+
             newcargarcliente.Show();
+            
         }
 
+        private void lISTADECLIENTESToolStripMenuItem_Click(object sender, EventArgs e)
+        { 
+           
+            ListadeClientes newlistclient = new ListadeClientes();
+            
+            newlistclient.MdiParent = this;
+            
+            newlistclient.Show();
+
+        }
+
+        private void aCTUALIZARToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            ListadeClientes newlistclient = new ListadeClientes();
+
+            newlistclient.MdiParent = this;
+            //ver mas tarde
+        }
     }
 }

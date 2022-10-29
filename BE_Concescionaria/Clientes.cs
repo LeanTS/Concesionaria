@@ -21,6 +21,8 @@ namespace BE_Concescionaria
             DT.Columns.Add("Fecha", typeof(string));
             DT.Columns.Add("Moto", typeof(string));
             DT.Columns.Add("Estado", typeof(string));
+            
+
 
             Leer_DT();
         }

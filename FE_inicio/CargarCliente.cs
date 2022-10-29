@@ -50,6 +50,7 @@ namespace FE_inicio
             {
                 MessageBox.Show("Falta Nombre, apellido o fecha");
             }
+            Limpiarpantalla();
 
         }
 

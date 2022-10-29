@@ -1,11 +1,51 @@
 <?xml version="1.0" standalone="yes"?>
 <DocumentElement>
   <Clientes>
-    <Nombre>choncha</Nombre>
-    <Apellido>tumare</Apellido>
+    <Nombre>pancrasio</Nombre>
+    <Apellido>benites</Apellido>
     <Telefono>3515182362</Telefono>
-    <Fecha>25/10/2022</Fecha>
-    <Moto>pisteritaaaa</Moto>
+    <Fecha>26/10/2022</Fecha>
+    <Moto>Motomel S2 150cc</Moto>
     <Estado>Seguimiento</Estado>
+  </Clientes>
+  <Clientes>
+    <Nombre>juan</Nombre>
+    <Apellido>mark</Apellido>
+    <Telefono>3515182362</Telefono>
+    <Fecha>16/10/2022</Fecha>
+    <Moto>110</Moto>
+    <Estado>seguimiento</Estado>
+  </Clientes>
+  <Clientes>
+    <Nombre>asd</Nombre>
+    <Apellido>asd</Apellido>
+    <Telefono>as</Telefono>
+    <Fecha>asd</Fecha>
+    <Moto>asd</Moto>
+    <Estado>sd</Estado>
+  </Clientes>
+  <Clientes>
+    <Nombre>asd</Nombre>
+    <Apellido>asdd</Apellido>
+    <Telefono>asd</Telefono>
+    <Fecha>dasdas</Fecha>
+    <Moto>asd</Moto>
+    <Estado>asdasdas</Estado>
+  </Clientes>
+  <Clientes>
+    <Nombre>asd</Nombre>
+    <Apellido>asdasdqwe</Apellido>
+    <Telefono>asd</Telefono>
+    <Fecha>asdqwew</Fecha>
+    <Moto>asd</Moto>
+    <Estado>qweqweqwe</Estado>
+  </Clientes>
+  <Clientes>
+    <Nombre>uwu</Nombre>
+    <Apellido>wuw</Apellido>
+    <Telefono>uwuw</Telefono>
+    <Fecha>uww</Fecha>
+    <Moto>uwu</Moto>
+    <Estado>uwuw</Estado>
   </Clientes>
 </DocumentElement>
