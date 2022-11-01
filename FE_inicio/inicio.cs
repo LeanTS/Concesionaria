@@ -44,13 +44,20 @@ namespace FE_inicio
 
         }
 
-        private void aCTUALIZARToolStripMenuItem_Click(object sender, EventArgs e)
+        private void mODIFICARCLIENTEToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
-            ListadeClientes newlistclient = new ListadeClientes();
+        }
 
-            newlistclient.MdiParent = this;
-            //ver mas tarde
+        private void mOTOSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            ListaMotos newmotos = new ListaMotos();
+
+            newmotos.MdiParent = this;
+
+            newmotos.Show();
+
         }
     }
 }

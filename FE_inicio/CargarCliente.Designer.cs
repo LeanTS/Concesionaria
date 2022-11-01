@@ -54,6 +54,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tb_estado = new System.Windows.Forms.TextBox();
             this.btn_borrar = new System.Windows.Forms.Button();
+            this.btn_modificar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_cargar)).BeginInit();
             this.SuspendLayout();
             // 
@@ -236,6 +237,7 @@
             this.dtgv_cargar.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgv_cargar.Size = new System.Drawing.Size(776, 150);
             this.dtgv_cargar.TabIndex = 12;
+            this.dtgv_cargar.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_cargar_CellContentClick);
             // 
             // Num
             // 
@@ -318,6 +320,22 @@
             this.btn_borrar.UseVisualStyleBackColor = false;
             this.btn_borrar.Click += new System.EventHandler(this.btn_borrar_Click);
             // 
+            // btn_modificar
+            // 
+            this.btn_modificar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_modificar.AutoSize = true;
+            this.btn_modificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btn_modificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_modificar.Location = new System.Drawing.Point(12, 205);
+            this.btn_modificar.MaximumSize = new System.Drawing.Size(134, 40);
+            this.btn_modificar.Name = "btn_modificar";
+            this.btn_modificar.Size = new System.Drawing.Size(134, 40);
+            this.btn_modificar.TabIndex = 14;
+            this.btn_modificar.Text = "MODIFICAR";
+            this.btn_modificar.UseVisualStyleBackColor = false;
+            this.btn_modificar.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // CargarCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -326,6 +344,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn_modificar);
             this.Controls.Add(this.btn_borrar);
             this.Controls.Add(this.tb_estado);
             this.Controls.Add(this.label1);
@@ -378,5 +397,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Fecha;
         private System.Windows.Forms.DataGridViewTextBoxColumn Moto;
         private System.Windows.Forms.DataGridViewTextBoxColumn Estado;
+        private System.Windows.Forms.Button btn_modificar;
     }
 }

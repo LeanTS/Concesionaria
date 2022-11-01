@@ -7,6 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FE_inicio", "FE_inicio\FE_i
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BE_Concescionaria", "BE_Concescionaria\BE_Concescionaria.csproj", "{0C10BD4A-A7FE-454B-8F72-DDE2610F8594}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementos de la solución", "Elementos de la solución", "{EBBBA28B-6FC7-4926-A253-A56BA19777F5}"
+	ProjectSection(SolutionItems) = preProject
+		Motoslista.xml = Motoslista.xml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

@@ -33,18 +33,11 @@
             this.CPGToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nosotrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.VEHICULOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aUTOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.kMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.uSADOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mOTOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.primerasMarcasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.segundasMarcasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.CLIENTESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lISTADECLIENTESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cARGARCLIENTEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mODIFICARCLIENTEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.asdToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.aCTUALIZARToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -82,62 +75,24 @@
             // VEHICULOSToolStripMenuItem
             // 
             this.VEHICULOSToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aUTOSToolStripMenuItem,
             this.mOTOSToolStripMenuItem});
             this.VEHICULOSToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.VEHICULOSToolStripMenuItem.Name = "VEHICULOSToolStripMenuItem";
             this.VEHICULOSToolStripMenuItem.Size = new System.Drawing.Size(97, 23);
             this.VEHICULOSToolStripMenuItem.Text = "VEHICULOS";
             // 
-            // aUTOSToolStripMenuItem
-            // 
-            this.aUTOSToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.kMToolStripMenuItem,
-            this.uSADOSToolStripMenuItem});
-            this.aUTOSToolStripMenuItem.Name = "aUTOSToolStripMenuItem";
-            this.aUTOSToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
-            this.aUTOSToolStripMenuItem.Text = "AUTOS";
-            // 
-            // kMToolStripMenuItem
-            // 
-            this.kMToolStripMenuItem.Name = "kMToolStripMenuItem";
-            this.kMToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
-            this.kMToolStripMenuItem.Text = "0KM";
-            // 
-            // uSADOSToolStripMenuItem
-            // 
-            this.uSADOSToolStripMenuItem.Name = "uSADOSToolStripMenuItem";
-            this.uSADOSToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
-            this.uSADOSToolStripMenuItem.Text = "USADOS";
-            // 
             // mOTOSToolStripMenuItem
             // 
-            this.mOTOSToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.primerasMarcasToolStripMenuItem,
-            this.segundasMarcasToolStripMenuItem});
             this.mOTOSToolStripMenuItem.Name = "mOTOSToolStripMenuItem";
             this.mOTOSToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.mOTOSToolStripMenuItem.Text = "MOTOS";
-            // 
-            // primerasMarcasToolStripMenuItem
-            // 
-            this.primerasMarcasToolStripMenuItem.Name = "primerasMarcasToolStripMenuItem";
-            this.primerasMarcasToolStripMenuItem.Size = new System.Drawing.Size(194, 24);
-            this.primerasMarcasToolStripMenuItem.Text = "Primeras Marcas";
-            // 
-            // segundasMarcasToolStripMenuItem
-            // 
-            this.segundasMarcasToolStripMenuItem.Name = "segundasMarcasToolStripMenuItem";
-            this.segundasMarcasToolStripMenuItem.Size = new System.Drawing.Size(194, 24);
-            this.segundasMarcasToolStripMenuItem.Text = "Segundas Marcas";
+            this.mOTOSToolStripMenuItem.Click += new System.EventHandler(this.mOTOSToolStripMenuItem_Click);
             // 
             // CLIENTESToolStripMenuItem
             // 
             this.CLIENTESToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aCTUALIZARToolStripMenuItem,
             this.lISTADECLIENTESToolStripMenuItem,
-            this.cARGARCLIENTEToolStripMenuItem,
-            this.mODIFICARCLIENTEToolStripMenuItem});
+            this.cARGARCLIENTEToolStripMenuItem});
             this.CLIENTESToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.CLIENTESToolStripMenuItem.Name = "CLIENTESToolStripMenuItem";
             this.CLIENTESToolStripMenuItem.Overflow = System.Windows.Forms.ToolStripItemOverflow.AsNeeded;
@@ -147,35 +102,22 @@
             // lISTADECLIENTESToolStripMenuItem
             // 
             this.lISTADECLIENTESToolStripMenuItem.Name = "lISTADECLIENTESToolStripMenuItem";
-            this.lISTADECLIENTESToolStripMenuItem.Size = new System.Drawing.Size(212, 24);
+            this.lISTADECLIENTESToolStripMenuItem.Size = new System.Drawing.Size(200, 24);
             this.lISTADECLIENTESToolStripMenuItem.Text = "LISTA DE CLIENTES";
             this.lISTADECLIENTESToolStripMenuItem.Click += new System.EventHandler(this.lISTADECLIENTESToolStripMenuItem_Click);
             // 
             // cARGARCLIENTEToolStripMenuItem
             // 
             this.cARGARCLIENTEToolStripMenuItem.Name = "cARGARCLIENTEToolStripMenuItem";
-            this.cARGARCLIENTEToolStripMenuItem.Size = new System.Drawing.Size(212, 24);
+            this.cARGARCLIENTEToolStripMenuItem.Size = new System.Drawing.Size(200, 24);
             this.cARGARCLIENTEToolStripMenuItem.Text = "CARGAR CLIENTE";
             this.cARGARCLIENTEToolStripMenuItem.Click += new System.EventHandler(this.cARGARCLIENTEToolStripMenuItem_Click);
-            // 
-            // mODIFICARCLIENTEToolStripMenuItem
-            // 
-            this.mODIFICARCLIENTEToolStripMenuItem.Name = "mODIFICARCLIENTEToolStripMenuItem";
-            this.mODIFICARCLIENTEToolStripMenuItem.Size = new System.Drawing.Size(212, 24);
-            this.mODIFICARCLIENTEToolStripMenuItem.Text = "MODIFICAR CLIENTE";
             // 
             // asdToolStripMenuItem4
             // 
             this.asdToolStripMenuItem4.Name = "asdToolStripMenuItem4";
             this.asdToolStripMenuItem4.Size = new System.Drawing.Size(180, 22);
             this.asdToolStripMenuItem4.Text = "Nosotros";
-            // 
-            // aCTUALIZARToolStripMenuItem
-            // 
-            this.aCTUALIZARToolStripMenuItem.Name = "aCTUALIZARToolStripMenuItem";
-            this.aCTUALIZARToolStripMenuItem.Size = new System.Drawing.Size(212, 24);
-            this.aCTUALIZARToolStripMenuItem.Text = "ACTUALIZAR";
-            this.aCTUALIZARToolStripMenuItem.Click += new System.EventHandler(this.aCTUALIZARToolStripMenuItem_Click);
             // 
             // inicio
             // 
@@ -205,18 +147,11 @@
         private System.Windows.Forms.ToolStripMenuItem CPGToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem nosotrosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem VEHICULOSToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem aUTOSToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem kMToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem uSADOSToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mOTOSToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem CLIENTESToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem asdToolStripMenuItem4;
-        private System.Windows.Forms.ToolStripMenuItem primerasMarcasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem segundasMarcasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem lISTADECLIENTESToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cARGARCLIENTEToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mODIFICARCLIENTEToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem aCTUALIZARToolStripMenuItem;
     }
 }
 

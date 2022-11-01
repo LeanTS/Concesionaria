@@ -24,7 +24,7 @@ namespace FE_inicio
         
         private void CargarCliente_Load(object sender, EventArgs e)
         {
-           
+
         }
 
         private void textBox4_TextChanged(object sender, EventArgs e)
@@ -79,6 +79,48 @@ namespace FE_inicio
             tb_telefono.Text = "";
             tb_estado.Text = "";
             tb_nombre.Focus();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            int f = 0;
+            for (int i = 0; i < dtgv_cargar.Rows.Count - 1; i++)
+            {
+                if (dtgv_cargar.Rows[i].Selected == true)
+                {
+                    f = i;
+                    string nom = tb_nombre.Text;
+                    string ape = tb_apellidos.Text;
+                    string tel = tb_telefono.Text;
+                    string fec = tb_fecha.Text;
+                    string mot = tb_moto.Text;
+                    string est = tb_estado.Text;
+
+                    clientes.ModCliente(f, nom, ape, tel, fec, mot, est);
+                    break;
+                }
+
+            }
+        }
+
+        private void dtgv_cargar_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int f = 0;
+            for (int i = 0; i < dtgv_cargar.Rows.Count - 1; i++)
+            {
+                if (dtgv_cargar.Rows[i].Selected == true)
+                {
+                    f = i;
+                    tb_nombre.Text = (string)clientes.DT.Rows[f]["Nombre"];
+                    tb_apellidos.Text = (string)clientes.DT.Rows[f]["Apellido"];
+                    tb_telefono.Text = (string)clientes.DT.Rows[f]["Telefono"];
+                    tb_fecha.Text = (string)clientes.DT.Rows[f]["Fecha"];
+                    tb_moto.Text = (string)clientes.DT.Rows[f]["Moto"];
+                    tb_estado.Text = (string)clientes.DT.Rows[f]["Estado"];
+                    break;
+                }
+
+            }
         }
     }
 }

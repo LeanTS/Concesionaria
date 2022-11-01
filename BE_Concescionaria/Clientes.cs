@@ -28,7 +28,7 @@ namespace BE_Concescionaria
         }
         private void Leer_DT()
         {
-            if (System.IO.File.Exists(@"D:\ProgramasVS2022\Concesionaria\Clientes.xml"))
+            if (System.IO.File.Exists(@"D:\ProgramasVS2022\Concesionaria\Clientes.xml") == true )
             {
                 DT.ReadXml(@"D:\ProgramasVS2022\Concesionaria\Clientes.xml");
             }
@@ -64,6 +64,27 @@ namespace BE_Concescionaria
                 if (i == res)
                 {
                     DT.Rows[res].Delete();
+                    DT.WriteXml(@"D:\ProgramasVS2022\Concesionaria\Clientes.xml");
+                    break;
+                }
+            }
+            return res;
+        }
+        public int ModCliente(int res, string nombre, string apellido, string telefono, string fecha, string moto, string estado)
+        {
+            Persona persona = new Persona();
+
+            for (int i = 0; i < DT.Rows.Count; i++)
+            {
+                if (i == res)
+                {
+                    DT.Rows[res]["Nombre"] = nombre;
+                    DT.Rows[res]["Apellido"] = apellido;
+                    DT.Rows[res]["Telefono"] = telefono;
+                    DT.Rows[res]["Fecha"] = fecha;
+                    DT.Rows[res]["Moto"] = moto;
+                    DT.Rows[res]["Estado"] = estado;
+
                     DT.WriteXml(@"D:\ProgramasVS2022\Concesionaria\Clientes.xml");
                     break;
                 }
